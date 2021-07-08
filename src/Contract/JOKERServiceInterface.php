@@ -26,5 +26,12 @@ interface JOKERServiceInterface {
      * @return mixed
      */
     function gameDetail(string $op_code, string $account, string $bet_id);
-}
 
+    /**
+     * 上/下分失敗 訂單檢核
+     * @param string $op_code
+     * @param string $order_no
+     * @return mixed
+     */
+    function orderFailCheck(string $op_code, string $order_no);
+}
